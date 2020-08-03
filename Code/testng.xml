@@ -1,0 +1,101 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="Hearsay Systems">
+
+<!-- Define the parameters:  URL, Browser, Summarized Link -->
+    <parameter name="appURL" value="https://staging.hearsaysocial.com/1476/" />
+    <parameter name="browserType" value="chrome" /> 
+    <parameter name="summarizedLinkURL" value="https://www.businessinsider.com/microsoft-xbox-netflix-for-games-2019-1"/>
+    
+    
+
+    
+<!-- Set the staging username and password -->
+    <parameter name="stagingUsername" value="sorchanian@hearsaycorp.com"/>
+       
+
+
+
+
+<!--  Define the test classes to run -->
+	
+	
+	
+	<test name="Hearsay Automation Tests"> 
+	
+       <classes>
+        
+            <class name="Tests.BasePageTest" />
+            <class name="Tests.SignInPageTest" />
+            <class name="Tests.AdminHierarchyTest"/>
+            <class name="Tests.EndUserSuggestedContentPostWithTagsTest"/>
+            <class name="Tests.CreateMultipleSuggestedPostsTest"/>
+            <class name="Tests.PublishMultipleSuggestedPostsTest"/>
+            <class name="Tests.EmailLibraryTest"/>
+            <class name="Tests.AdminEmailWithNotesTest"/>
+            <class name="Tests.AdminEmailDynamicCampaignsTest"/>
+            <class name="Tests.EndUserSuggestedContentPostTest"/>
+            <class name="Tests.CreateContactTest_V1"/>
+            <class name="Tests.WorkspaceSettingsTest"/>
+            <class name="Tests.UserSettingsTest"/>
+            <class name="Tests.EndUserSuggestedContentPostWithSummarizedLinkTest"/>
+<!--             <class name="Tests.CreateNewContactTest_V2"/> -->
+<!--             <class name="Tests.EditNewContactTest_V2"/> -->
+<!--             <class name="Tests.ContactSubscribeToEmailCampaignTest_V2"/> -->
+			<class name="Tests.ConnectAccountsTest"/>
+				 <class name="Tests.CheckTopNavMenuChoicesTest"/>
+			<class name="Tests.EmailSettingsTest"/>
+			<class name="Tests.AdminAnalyzeMailContentTest"/>
+			<class name="Tests.AdminAnalyzeMailOverviewTest"/>
+            
+        </classes>
+	        
+	</test> 
+	    
+</suite> 
+
+
+    
+    
+     
+     
+ 
+ 
+    <!--  
+    <test name="UnitTesting">
+    
+        <classes>
+            <class name="Tests.BasePageTest" />
+        </classes>
+        
+    </test>
+    
+    <test name="FunctionalTesting">
+    
+        <classes>
+            <class name="Tests.BasePageTest" />
+            <class name="Tests.CreateAnAccountTest" />
+        </classes>
+        
+    </test>
+    
+    <test name="UITesting">
+    
+        <classes>
+            <class name="Tests.CreateAnAccountTest" />
+            <class name="Tests.SignInPageTest" />
+        </classes>
+        
+    </test>
+    
+</suite> -->
+
+
+
+
+
+
+
+
+
